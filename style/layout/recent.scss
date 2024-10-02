@@ -1,0 +1,98 @@
+.recent {
+    padding-bottom: 90px;
+    background-color: #F7F7F7;
+    .container {
+        .recent-title {
+            font-family: Oxygen;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 2px;
+            text-align: center;
+            // border-bottom: 1px solid #DEDEDE;
+            padding-bottom: 16px;
+
+        }
+        .recent-item__wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 25px 0;
+            margin-top: 20px;
+            @media (max-width: 650px){
+                justify-content: center;
+            }
+            
+            .recent-item {
+                
+                min-height: 296px;
+                width: 32%;
+                // &:hover {
+                //     zoom: 103%;
+                // }
+                @media (max-width: 1024px){
+                    width: 48%;
+                }
+                @media (max-width: 650px){
+                    width: 80%;
+                }
+                .recent-item_thumb{
+                img {
+                    width: 100%;
+                }
+                 }
+                .recent-info {
+                    padding: 14px 13px 6px 13px;
+                   
+                }
+                h2 {
+                    font-family: Lora;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    text-align: left;
+                    color: #101315;
+                }
+                .recent-info-text {
+                    font-family: Oxygen;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    text-align: left;
+                    color: #7A7A7A;
+                    border-bottom: 1px solid #EFEFEF;
+                    padding-bottom: 12px;
+                    // height: 93px;
+                    padding-top: 10px;
+
+                }
+                .autor-item {
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .autor-info {
+                        display: flex;
+                        align-items: center;
+                        .autor-name {
+                            font-family: Oxygen;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 35px;
+                            text-align: left;
+                            color: #999999;
+                            margin-left: 10px;
+
+                        }
+                    }
+                    .recent-date {
+                        font-family: Oxygen;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 35px;
+                        color: #999999;
+                    }
+                }
+            }
+        }
+    }
+}
